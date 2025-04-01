@@ -52,9 +52,12 @@ body{
 }
 
 .resolve{
-    width: 100%;
-    grid-column: span 3 / span 3;
+    grid-column: span 2 / span 2;
     grid-row-start:5;
+}
+
+.backspace{
+    grid-row-start: 5;
 }
 
 .operators{
