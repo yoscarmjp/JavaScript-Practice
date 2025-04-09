@@ -1,0 +1,7 @@
+{
+    "workbench.activityBar.iconClickBehavior": "toggle",
+    "zenMode.hideStatusBar": true,
+    "workbench.editor.autoLockGroups": {
+        "mainThreadWebview-browserPreview": false
+    }
+}

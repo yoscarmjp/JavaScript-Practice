@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+aside{
+    width: 300px;
+    height: 600px;
+    border-radius: 16px 0 0 16px;
+    background-color: #111;
+}
+
+aside h1{
+    color: white;
+    text-align: center;
+    font-size: 28px;
+}
+
+aside p{
+    color: #B3B3B3;
+    text-align: center;
+    margin-top: -18px;
+    font-size: 12px;
+}
+
+aside .list-category{
+    padding: 14px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 16px;
+}
+
+aside .list-category .category h2{
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+aside .list-category .category ul li{
+    cursor: pointer;
+    color: #B3B3B3;
+}
+
+aside .add-plans{
+    position: relative;
+    top: 140px;
+    padding: 10px 20px;
+    width: 150px;
+    height: 40px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    background-color: #0063B6;
+    border: none;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+aside .add-plans:hover{
+     background-color: #002B54;
+}
+
+main{
+    width: 600px;
+    height: 600px;
+    background-color: #181818;
+    border-radius: 0 16px 16px 0;
+}
+
+main h1{
+    color: white;
+    text-align: center;
+}
+
+main .account-info{
+    padding: 15px;
+    color: white;
+}
+
+main .account-info p{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+main .account-info span{
+    color: #B3B3B3;
+    font-weight: 300;
+}
+
+main .account-info .btn-edit,
+main .account-info .btn-delete{
+    border: none;
+    padding: 10px 20px;
+    width: 120px;
+    height: 35px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-delete{
+    background-color: red;
+}
+
+.btn-edit{
+    background-color: rgb(8, 204, 8);
+}
+
+.btn-delete:hover{
+    background-color: rgb(158, 5, 5);
+}
+
+.btn-edit:hover{
+    background-color: green;
+}
