@@ -53,6 +53,54 @@
         </div>
     </main>
 
-    <script src="assets/scripts/app.js"></script>
+    <form id="create-account" class="create-account" action="">
+        <i class='bx bx-x' id="close"></i>
+        <h1>Add account</h1>
+        <p>Fill in the details below to create a new account.</p>
+
+        <!--  -->
+        <label for="name">Name:</label>
+        <input 
+            type="text" 
+            placeholder="Enter the account name"
+            id="name"
+        >
+        <span class="error-messages" id="nameError"></span>
+
+        <!--  -->
+        <label for="cost">Cost:</label>
+        <input 
+            type="text"
+            placeholder="Enter the account cost"
+            id="cost"
+        >
+        <span class="error-messages" id="costError"></span>
+
+        <!--  -->
+        <label for="description">Description:</label>
+        <input 
+            type="text"
+            class="description"
+            placeholder="Enter the account description"
+            id="description"
+        >
+        <span class="error-messages" id="descriptionError"></span>
+        
+        <!--  -->
+        <label for="category">Category:</label>
+        <select name="category" id="category">
+            <option value="">Select a category</option>
+            <option value="shopping">Shopping</option>
+            <option value="services">Services</option>
+            <option value="maintenance">Maintenance</option>
+        </select>
+        <span class="error-messages" id="categoryError"></span>
+
+
+        <button type="submit">Create Account</button>
+    </form>
+
+    <script src="assets/scripts/modal.js"></script>
+    <script src="assets/scripts/formCreate.js"></script>
 </body>
 </html>

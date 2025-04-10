@@ -44,6 +44,7 @@ aside .list-category .category h2{
 aside .list-category .category ul li{
     cursor: pointer;
     color: #B3B3B3;
+    font-style: normal; 
 }
 
 aside .add-plans{
@@ -119,4 +120,79 @@ main .account-info .btn-delete{
 
 .btn-edit:hover{
     background-color: green;
+}
+
+
+/* Form */
+
+.create-account{
+    display: none;
+    flex-flow: column nowrap;
+    width: 350px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 16px;
+    border-radius: 16px;
+    position: fixed;
+    z-index: 9999999;
+}
+
+.create-account i{
+    color: red;
+    font-size: 28px;
+    position: relative;
+    left: 330px;
+    margin-bottom: -28px;
+}
+
+.create-account h1{
+    text-align: center;
+    font-size: 28px;
+}
+
+.create-account p{
+    text-align: center;
+    margin-top: -18px;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.create-account input,
+.create-account select{
+    padding: 10px 15px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.create-account input:focus{
+    outline: none;
+    border: 1px solid #111;
+}
+
+.create-account label{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.create-account button{
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0063B6;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+.create-account button:hover{
+    cursor: pointer;
+    background-color: #00509E;
+}
+
+.create-account .error-messages{
+    margin-top: 2px;
+    color: red;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 16px;
 }
